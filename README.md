@@ -1,4 +1,7 @@
 # Analyse und Visualisieurng archäologischer Daten mit R
+
+**Unterlagen und Skripte zum R-Turorial beim [7. Workshop der AG CAA in Hamburg (6.-7.2.2016)](http://ag-caa.de/workshop2016/)**
+
 *Dirk Seidensticker M.A. (Universität zu Köln) und Clemens Schmid B.A. (CAU Kiel)*
 
 Ziel des Tutorials ist es, eine Einführung in R, die Softwareumgebung und Programmiersprache für statistisches Rechnen und Grafiken, zu geben. Dabei sollen besonders die Anwendungsmöglichkeiten in der archäologischen Forschung aufgezeigt werden. Neben einer grundlegenden Einführung in die Nutzung und Arbeit mit und in R wollen wir anhand forschungsnaher Beispieldaten die Anwendung deskriptiver und weiterführender statistischer Verfahren üben und Techniken erarbeiten, Ergebnisse publikationsreif graphisch aufzubereiten.
@@ -11,6 +14,7 @@ Nähere Informationen sowie alle Skripte, Daten und Anleitungen werden hier zu f
 Die Entwicklung dieses Tutorials ist ein dynamischer Prozess, den wir gerne über Github teilen und offen legen möchten. Wir bitten zu beachten, dass Daten und Ausarbeitungen in diesem "Work-in-progress"-Archiv folglich mitunter unvollständig und Skripte teilweise noch nicht funktional sein können. 
 
 ## Benötigte Software
-* [R: The R Project for Statistical Computing](https://www.r-project.org/): Die neusten Installationsdateien: [The Comprehensive R Archive Network](http://ftp5.gwdg.de/pub/misc/cran/)
+* [R: The R Project for Statistical Computing](https://www.r-project.org/):
+	* Die neusten Installationsdateien: [The Comprehensive R Archive Network](http://ftp5.gwdg.de/pub/misc/cran/)
 * [RStudio](https://www.rstudio.com/products/rstudio/download/)
 * Pakete: *wir werden kurz vor dem Tutorial ein R-Skript anbieten, welches die notwenigen Pakete automatisch installiert; Anleitung folgt*
