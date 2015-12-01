@@ -1,4 +1,4 @@
-# Analyse und Visualisieurng archäologischer Daten mit R
+# Analyse und Visualisierung archäologischer Daten mit R
 
 **Unterlagen und Skripte zum R-Turorial beim [7. Workshop der AG CAA in Hamburg (6.-7.2.2016)](http://ag-caa.de/workshop2016/)**
 
@@ -17,4 +17,4 @@ Die Entwicklung dieses Tutorials ist ein dynamischer Prozess, den wir gerne übe
 * [R: The R Project for Statistical Computing](https://www.r-project.org/):
 	* Die neusten Installationsdateien: [The Comprehensive R Archive Network](http://ftp5.gwdg.de/pub/misc/cran/)
 * [RStudio](https://www.rstudio.com/products/rstudio/download/)
-* Pakete: *wir werden kurz vor dem Tutorial ein R-Skript anbieten, welches die notwenigen Pakete automatisch installiert; Anleitung folgt*
+* Pakete: *wir werden kurz vor dem Tutorial ein R-Skript anbieten, welches die notwendigen Pakete automatisch installiert; Anleitung folgt*
