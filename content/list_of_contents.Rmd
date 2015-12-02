@@ -1,0 +1,89 @@
+---
+title: "Inhaltsverzeichnis"
+output: html_document
+---
+
+***
+
+- Theoretische Einführung (1.5h)
+
+    - R als Programmiersprache
+        - Geschichte
+        - Definition und Abgrenzung
+        - Bestandteile und Struktur
+            - Expressions
+            - Objects
+            - Symbols
+            - Functions und Operators
+        - R Interpreter
+        - Libraries
+        - Hilfefunktionen
+
+    - Einfach Objekte
+        - Überblick Objekte
+            - Welche Objekte gibt es?
+            - Welche Objekte wofür?
+        - Einfache Objekte anlegen
+            - Constants
+            - Vectors
+            - data.frames
+        - Einfache Objekte adressieren
+    
+    - Einfache Funktionen
+        - Überblick Funktionen
+            - Aufbau und Zweck einer Funktion
+            - Eingabewerte und Rückgabewerte
+        - Funktionen anlegen
+        - Objektorientierte Techniken
+            - Bedingungen
+            - Schleifen
+
+***
+
+- Datenverarbeitung mit R (3h)
+
+    - Daten laden und speichern
+        - Daten in R anlegen
+        - Daten aus Dateien laden
+        - Daten aus Datenbanken und dem Internet laden
+    
+    - Daten verarbeiten und vorbereiten
+        - Archäologische Daten
+            - Datentypen
+            - Skalenniveaus 
+        - Tidy-Data-Prinzip
+        - Daten reinigen und aufbereiten
+            - merging
+            - grouping
+            - factors
+            - Duplikate entfernen
+            - ...
+        - Subsetting und Pivotieren
+        - Daten manipulieren (tapply)
+        - Sortierung
+    
+    - Daten verstehen und beschreiben
+        - Deskriptive Statistik
+
+***
+
+- Daten visualisieren (Rest der Zeit)
+
+    - Standartplotfunktionen (? - ich würde "normale" Plots komplett weg lassen)
+
+    - ggplot2
+        - Geschichte und Hintergrund
+        - Struktur und Syntax
+        - Anwendungen der Datenvisualisierung
+            - Boxplots
+            - Barplots
+            - Scatterplots
+            - Densitykurven
+            - Regressionskurven
+            - ...
+            - Kartierung
+        
+***
+
+- Bi- und Multivariate Statistik / Tests (optional?)
+
