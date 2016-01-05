@@ -5,9 +5,9 @@ output: html_document
 
 ***
 
-- Theoretische Einführung (30min)
+- 1 Theoretische Einführung (30min)
 
-    - Warum R? Motivation (DS) (5min)
+    - 1.1 Warum R? Motivation (DS) (5min)
         - Archäologische Daten
           - Datentypen
           - Skalenniveaus
@@ -15,13 +15,13 @@ output: html_document
         - Reproduzierbarkeit
         - Vor- und Nachteile von R
 
-    - R als Programmiersprache (CS) (5min)
+    - 1.2 R als Programmiersprache (CS) (5min)
         - Geschichte
         - R Funktionsprinzip
         - Libraries
         - Hilfefunktionen
 
-    - Einfach Objekte (CS) (15min)
+    - 1.3 Einfach Objekte (CS) (15min)
         - Überblick Objekte
             - Welche Objekte gibt es?
             - Welche Objekte wofür?
@@ -32,7 +32,7 @@ output: html_document
         - Einfache Objekte adressieren
         - *Übung*
     
-    - Einfache Funktionen (DS) (5min)
+    - 1.4 Einfache Funktionen (DS) (5min)
         - Überblick Funktionen
             - Aufbau und Zweck einer Funktion
             - Eingabewerte und Rückgabewerte
@@ -40,16 +40,16 @@ output: html_document
 
 ***
 
-- Datenverstehen und beschreiben mit R (1h)
+- 2 Datenverstehen und beschreiben mit R (1h)
 
-    - Datenhaltung - Dateisystem (DS) (5min)
+    - 2.1 Datenhaltung (DS) (5min)
 
-    - Daten laden und speichern (DS) (5min)
+    - 2.2 Daten laden und speichern (DS) (5min)
         - Daten aus Dateien laden 
         - (Daten aus Datenbanken und dem Internet laden)
         - *Übung*
     
-    - Daten verarbeiten und vorbereiten 
+    - 2.3 Daten verarbeiten und vorbereiten 
         - Tidy-Data-Prinzip (CS) 
         - Daten reinigen und aufbereiten (CS) (20min)
             - merging (%in%)
@@ -65,26 +65,26 @@ output: html_document
           - Pivotieren (tapply)
           - *Übung*
         
-    - Deskriptive Statistik (DS) (10min)
+    - 2.4 Deskriptive Statistik (DS) (10min)
       - Standartfunktionen (min, max, mean, stdabw, ...)
 
 ***
 
-- Daten visualisieren (1h)
+- 3 Daten visualisieren (1h)
 
-    - ggplot2 - Theorie (CS) (10min)
+    - 3.1 ggplot2 - Theorie (CS) (10min)
         - Geschichte und Hintergrund
         - Abgrenzung zu plot()
         - Struktur und Syntax
     
-    - ggplot2 - Praxis (DS)
-        - **Anwendung 1: Histogramm** (15min)
-        - **Anwendung 2: Scatterplot** (15min)
-        - **Anwendung 3: Barplot** (15min)
-        - Anwendung 4: Boxplot (Bonus)
-        - Erweiterungen (Bonus)
+    - 3.2 ggplot2 - Praxis (DS)
+        - 3.2.1 **Anwendung 1: Histogramm** (15min)
+        - 3.2.2 **Anwendung 2: Scatterplot** (15min)
+        - 3.2.2 **Anwendung 3: Barplot** (15min)
+        - 3.2.3 Anwendung 4: Boxplot (Bonus)
+        - 3.2.4 Erweiterungen (Bonus)
           - Densitykurven
           - Regressionskurven
-        - Anwendung 5: Kartierung (CS) (Bonus)
+        - 3.2.5 Anwendung 5: Kartierung (CS) (Bonus)
 
 ***
