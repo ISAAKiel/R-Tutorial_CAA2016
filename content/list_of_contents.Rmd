@@ -5,21 +5,23 @@ output: html_document
 
 ***
 
-- Theoretische Einführung (1.5h)
+- Theoretische Einführung (30min)
 
-    - R als Programmiersprache
+    - Warum R? Motivation (DS) (5min)
+        - Archäologische Daten
+          - Datentypen
+          - Skalenniveaus
+        - Fragestellungen
+        - Reproduzierbarkeit
+        - Vor- und Nachteile von R
+
+    - R als Programmiersprache (CS) (5min)
         - Geschichte
-        - Definition und Abgrenzung
-        - Bestandteile und Struktur
-            - Expressions
-            - Objects
-            - Symbols
-            - Functions und Operators
-        - R Interpreter
+        - R Funktionsprinzip
         - Libraries
         - Hilfefunktionen
 
-    - Einfach Objekte
+    - Einfach Objekte (CS) (15min)
         - Überblick Objekte
             - Welche Objekte gibt es?
             - Welche Objekte wofür?
@@ -28,62 +30,61 @@ output: html_document
             - Vectors
             - data.frames
         - Einfache Objekte adressieren
+        - *Übung*
     
-    - Einfache Funktionen
+    - Einfache Funktionen (DS) (5min)
         - Überblick Funktionen
             - Aufbau und Zweck einer Funktion
             - Eingabewerte und Rückgabewerte
         - Funktionen anlegen
-        - Objektorientierte Techniken
-            - Bedingungen
-            - Schleifen
 
 ***
 
-- Datenverarbeitung mit R (3h)
+- Datenverstehen und beschreiben mit R (1h)
 
-    - Daten laden und speichern
-        - Daten in R anlegen
-        - Daten aus Dateien laden
-        - Daten aus Datenbanken und dem Internet laden
+    - Datenhaltung - Dateisystem (DS) (5min)
+
+    - Daten laden und speichern (DS) (5min)
+        - Daten aus Dateien laden 
+        - (Daten aus Datenbanken und dem Internet laden)
+        - *Übung*
     
-    - Daten verarbeiten und vorbereiten
-        - Archäologische Daten
-            - Datentypen
-            - Skalenniveaus 
-        - Tidy-Data-Prinzip
-        - Daten reinigen und aufbereiten
-            - merging
-            - grouping
+    - Daten verarbeiten und vorbereiten 
+        - Tidy-Data-Prinzip (CS) 
+        - Daten reinigen und aufbereiten (CS) (20min)
+            - merging (%in%)
             - factors
+            - grouping/aggregation
             - Duplikate entfernen
             - ...
-        - Subsetting und Pivotieren
-        - Daten manipulieren (tapply)
-        - Sortierung
-    
-    - Daten verstehen und beschreiben
-        - Deskriptive Statistik
-
-***
-
-- Daten visualisieren (Rest der Zeit)
-
-    - Standartplotfunktionen (? - ich würde "normale" Plots komplett weg lassen)
-
-    - ggplot2
-        - Geschichte und Hintergrund
-        - Struktur und Syntax
-        - Anwendungen der Datenvisualisierung
-            - Boxplots
-            - Barplots
-            - Scatterplots
-            - Densitykurven
-            - Regressionskurven
-            - ...
-            - Kartierung
+            - *Übung*
         
+        - Daten manipulieren (DS) (20min)
+          - Subsetting (subset, filter)
+          - Sortierung (sort, order)
+          - Pivotieren (tapply)
+          - *Übung*
+        
+    - Deskriptive Statistik (DS) (10min)
+      - Standartfunktionen (min, max, mean, stdabw, ...)
+
 ***
 
-- Bi- und Multivariate Statistik / Tests (optional?)
+- Daten visualisieren (1h)
 
+    - ggplot2 - Theorie (CS) (10min)
+        - Geschichte und Hintergrund
+        - Abgrenzung zu plot()
+        - Struktur und Syntax
+    
+    - ggplot2 - Praxis (DS)
+        - **Anwendung 1: Histogramm** (15min)
+        - **Anwendung 2: Scatterplot** (15min)
+        - **Anwendung 3: Barplot** (15min)
+        - Anwendung 4: Boxplot (Bonus)
+        - Erweiterungen (Bonus)
+          - Densitykurven
+          - Regressionskurven
+        - Anwendung 5: Kartierung (CS) (Bonus)
+
+***
