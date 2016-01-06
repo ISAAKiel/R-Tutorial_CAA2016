@@ -1,7 +1,12 @@
 #### Daten laden ####
 
 atlantpot <- read.csv("data/AtlantPottery.csv", sep = "\t", header = TRUE)
+
+# UNIX
 atlantgis <- read.csv("data/AtlantGIS_sites.csv", sep = ",", header = TRUE)
+
+# WinDoof?
+atlantgis <- read.csv("data/AtlantGIS_sites.csv", sep = ",", header = TRUE, encoding = 'UTF-8')
 
 
 ### Daten anschauen ###
@@ -86,3 +91,5 @@ atlant %>% group_by(site) %>% summarise(Gewicht_Summe = sum(wt), Gewicht_Mittelw
 
 u <- function(x){y <- mean(x); z <- sum(x); return(c(z,y))}
 aggregate(wt ~ site, atlant , u)
+
+write.table(atlant, file = "data/AtlantData1.csv", sep = "\t")
