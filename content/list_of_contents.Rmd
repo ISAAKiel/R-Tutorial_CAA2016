@@ -45,28 +45,23 @@ output: html_document
     - 2.1 Datenhaltung (DS) (5min)
 
     - 2.2 Daten laden und speichern (DS) (5min)
-        - Daten aus Dateien laden 
+        - Daten aus Dateien laden -> *Übung*
         - (Daten aus Datenbanken und dem Internet laden)
-        - *Übung*
-    
-    - 2.3 Daten verarbeiten und vorbereiten 
+
+    - 2.3 Daten verarbeiten und vorbereiten (40min)
         - Tidy-Data-Prinzip (CS) 
-        - Daten reinigen und aufbereiten (CS) (20min)
-            - merging (%in%)
-            - factors
-            - grouping/aggregation
-            - Duplikate entfernen
-            - ...
-            - *Übung*
-        
-        - Daten manipulieren (DS) (20min)
-          - Subsetting (subset, filter)
-          - Sortierung (sort, order)
-          - Pivotieren (tapply)
-          - *Übung*
-        
+        - Daten reinigen und aufbereiten (CS) 
+            - merging (%in%) -> *Übung*
+            - factors -> *Übung*
+            - Duplikate entfernen 
+            - Sortierung (sort, order) -> *Übung*
+            - grouping/aggregation -> *Übung*
+            - Pivotieren (tapply) (DS) -> *Übung*
+            - Wide to Long und Long to Wide -> *Übung*
+            - Subsetting (subset, filter) -> *Übung*
+
     - 2.4 Deskriptive Statistik (DS) (10min)
-      - Standartfunktionen (min, max, mean, stdabw, ...)
+      - Standartfunktionen (min, max, mean, stdabw, ...) -> *Übung*
 
 ***
 
@@ -78,9 +73,9 @@ output: html_document
         - Struktur und Syntax
     
     - 3.2 ggplot2 - Praxis (DS)
-        - 3.2.1 **Anwendung 1: Histogramm** (15min)
-        - 3.2.2 **Anwendung 2: Scatterplot** (15min)
-        - 3.2.2 **Anwendung 3: Barplot** (15min)
+        - 3.2.1 **Anwendung 1: Histogramm** (15min) -> *Übung*
+        - 3.2.2 **Anwendung 2: Scatterplot** (15min) -> *Übung*
+        - 3.2.2 **Anwendung 3: Barplot** (15min) -> *Übung*
         - 3.2.3 Anwendung 4: Boxplot (Bonus)
         - 3.2.4 Erweiterungen (Bonus)
           - Densitykurven
