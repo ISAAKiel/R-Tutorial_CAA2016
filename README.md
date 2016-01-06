@@ -18,3 +18,6 @@ Die Entwicklung dieses Tutorials ist ein dynamischer Prozess, den wir gerne übe
 	* Die neusten Installationsdateien: [The Comprehensive R Archive Network](http://ftp5.gwdg.de/pub/misc/cran/)
 * [RStudio](https://www.rstudio.com/products/rstudio/download/)
 * Pakete: *wir werden kurz vor dem Tutorial ein R-Skript anbieten, welches die notwendigen Pakete automatisch installiert; Anleitung folgt*
+
+## Daten
+Datengrundlage für den Kurs bildet ein modifizierter archäologischer Forschungsdatensatz, welcher sich auf den Trainingsdatensatz [AtlantGIS](https://github.com/kacebe/AtlantGIS) bezieht.
