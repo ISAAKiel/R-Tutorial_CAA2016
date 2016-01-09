@@ -19,5 +19,7 @@ Die Entwicklung dieses Tutorials ist ein dynamischer Prozess, den wir gerne übe
 * [RStudio](https://www.rstudio.com/products/rstudio/download/)
 * Pakete: *wir werden kurz vor dem Tutorial ein R-Skript anbieten, welches die notwendigen Pakete automatisch installiert; Anleitung folgt*
 
+[Die Installation der benötigsten Software (unter Windows) ist hier beschrieben](https://github.com/dirkseidensticker/R-Tutorial_CAA2016/blob/master/Installationsanleitung_Windows.md)
+
 ## Daten
 Datengrundlage für den Kurs bildet ein modifizierter archäologischer Forschungsdatensatz, welcher sich auf den Trainingsdatensatz [AtlantGIS](https://github.com/kacebe/AtlantGIS) bezieht.
