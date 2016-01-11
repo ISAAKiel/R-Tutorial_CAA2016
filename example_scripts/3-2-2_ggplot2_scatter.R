@@ -10,6 +10,17 @@ ggplot(
   geom_point()
 
 
+#### Logithmische Y-Achse ####
+
+ggplot(
+  mtcars, 
+  aes(x = mpg, y = hp)
+) + 
+  geom_point(
+  ) +
+  coord_trans(y="log2")
+
+
 #### Symbolgröße #####
 
 ggplot(
@@ -19,7 +30,8 @@ ggplot(
   geom_point(
     # size manuell angeben
     size = 4
-  )
+  ) + 
+  coord_trans(y="log2")
 
 
 #### Symbolgröße abhängig von Variable ####
@@ -30,7 +42,8 @@ ggplot(
   aes(x = mpg, y = hp, size = disp)
   ) + 
   geom_point(
-  )
+  ) + 
+  coord_trans(y="log2")
 
 
 #### Grenzen für Symbolgröße ####
@@ -41,6 +54,8 @@ ggplot(
   aes(x = mpg, y = hp, size = disp)
   ) + 
   geom_point(
+  ) + 
+  coord_trans(y="log2"
   ) + 
   # manuelle Festlegung der Symbolgrößen
   # scale_size_continuous(range = c(1,10))
@@ -58,6 +73,8 @@ ggplot(
   ) + 
   geom_point(
   ) + 
+  coord_trans(y="log2"
+  ) +
   scale_size_continuous(range = c(3,10))
 
 
@@ -73,6 +90,8 @@ ggplot(
   ) + 
   geom_point(
   ) + 
+  coord_trans(y="log2"
+  ) + 
   scale_size_continuous(range = c(3,10))
 
 
@@ -85,6 +104,8 @@ ggplot(
   ) + 
   geom_point(
   ) + 
+  coord_trans(y="log2"
+  ) + 
   scale_size_continuous(range = c(3,10))
 
 
@@ -96,7 +117,9 @@ ggplot(
   aes(x = mpg, y = hp, size = disp, color = wt, shape = g)
   ) + 
   geom_point(
-  ) + 
+  )  + 
+  coord_trans(y="log2"
+  ) +
   scale_size_continuous(range = c(3,10))
 
 
@@ -107,6 +130,8 @@ ggplot(
   aes(x = mpg, y = hp, size = disp, color = wt, shape = g)
   ) + 
   geom_point(
+  ) + 
+  coord_trans(y="log2"
   ) + 
   scale_size_continuous(range = c(3,10)) +
   # eigene Skala
@@ -119,6 +144,8 @@ ggplot(
   aes(x = mpg, y = hp, size = disp, color = wt, shape = g)
   ) + 
   geom_point(
+  ) + 
+  coord_trans(y="log2"
   ) + 
   scale_size_continuous(
     range = c(3,10)
@@ -143,6 +170,8 @@ ggplot(
   ) + 
   geom_point(
   ) + 
+  coord_trans(y="log2"
+  ) + 
   scale_size_continuous(
     range = c(3,10)
   ) +
@@ -164,6 +193,8 @@ ggplot(
   aes(x = mpg, y = hp, size = disp, fill = wt, shape = g)
 ) + 
   geom_point(
+  ) + 
+  coord_trans(y="log2"
   ) + 
   scale_size_continuous(
     range = c(3,10)
@@ -191,6 +222,8 @@ ggplot(
   aes(x = mpg, y = hp, size = disp, fill = wt, shape = g)
 ) + 
   geom_point(
+  ) + 
+  coord_trans(y="log2"
   ) + 
   scale_size_continuous(
     range = c(3,10),

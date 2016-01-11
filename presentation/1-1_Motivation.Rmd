@@ -25,6 +25,14 @@ fontsize: 8pt
 | zu Köln | |
 | **Python, R, SQL**  | **R, ...** |
 
+
+## Data Sciences
+
+\centering
+![](http://i0.wp.com/sciencereview.berkeley.edu/wp-content/uploads/2014/04/spring_2014_azam_05.jpg)
+
+\begin{small}A. Azam, The first rule of data science. The Berkeley Science Review. <http://berkeleysciencereview.com/article/first-rule-data-science/> [Stand: 10. Januar 2016].\end{small}
+
 ## Daten in der Archäologie
 
 
