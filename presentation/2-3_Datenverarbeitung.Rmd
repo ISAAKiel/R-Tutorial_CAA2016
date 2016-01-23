@@ -1,29 +1,186 @@
----
-title: "Daten verarbeiten und Vorbereiten"
-author: "Dirk Seidensticker/Clemens Schmid"
-date: "6. Februar 2016"
-fontsize: 9pt
-output:
-  beamer_presentation:
-    toc: true
-    theme: "metropolis"
-    pandoc_args: [
-      "--highlight-style=tango"
-    ]
-fig_caption: yes
+--- 
+title: "Daten verarbeiten und vorbereiten" 
+author: "Dirk
+Seidensticker/Clemens Schmid" 
+date: "6. Februar 2016" 
+fontsize: 9pt 
+output: 
+  beamer_presentation: 
+    toc: true 
+    theme: "metropolis" 
+    pandoc_args: [ 
+      "--highlight-style=tango" 
+    ] 
+fig_caption: yes 
 ---
 
 # Tidy-Data-Prinzip
 
-# Daten verknüpfen (merging)
+# Daten verknüpfen (merge)
 
-# Kategorisierung und Rangfdolgen (factors & levels)
+## Daten verknüpfen - Idee
 
-# Duplikate entfernen (unique)
+## base::merge()
+
+> merge(**x**, **y**, **by** = intersect(names(x), names(y)),
+      **by.x** = by, **by.y** = by, **all** = FALSE, **all.x** = all, **all.y** = all,
+      sort = TRUE, **suffixes** = c(".x",".y"),
+      incomparables = NULL, ...)
+
+**Beschreibung**
+
+...
+
+**Beispiel**
+
+```{r, results='hide', eval=FALSE} 
+# 
+```
+
+# Kategorisierung und Rangfolgen (factor & levels)
+
+## Kategorisierung und Rangfolgen - Idee
+
+## base::factor()
+
+> factor(**x** = character(), **levels**, **labels** = levels,
+       exclude = NA, **ordered** = is.ordered(x), nmax = NA)
+
+**Beschreibung**
+
+...
+
+**Beispiel**
+
+```{r, results='hide', eval=FALSE} 
+# 
+```
+
+## base::levels()
+
+> levels(**x**), levels(**x**) <- value
+
+**Beschreibung**
+
+...
+
+**Beispiel**
+
+```{r, results='hide', eval=FALSE} 
+# 
+```
+
+# Duplikate entfernen (unique & duplicated)
+
+## Duplikate entfernen - Idee 
+
+## base::unique()
+
+> unique(**x**, incomparables = FALSE, **fromLast** = FALSE,
+        nmax = NA, ...)
+
+**Beschreibung**
+
+...
+
+**Beispiel**
+
+```{r, results='hide', eval=FALSE} 
+# 
+```
+
+## base::duplicated()
+
+> duplicated(**x**, incomparables = FALSE,
+           **fromLast** = FALSE, nmax = NA, ...)
+
+**Beschreibung**
+
+...
+
+**Beispiel**
+
+```{r, results='hide', eval=FALSE} 
+# 
+```
 
 # Sortieren (sort & order)
 
+## Sortieren - Idee 
+
+## base::sort()
+
+> sort(**x**, **decreasing** = FALSE, na.last = NA, ...)
+
+**Beschreibung**
+
+...
+
+**Beispiel**
+
+```{r, results='hide', eval=FALSE} 
+# 
+```
+
+## base::order()
+
+> order(**...**, na.last = TRUE, **decreasing** = FALSE)
+
+**Beschreibung**
+
+...
+
+**Beispiel**
+
+```{r, results='hide', eval=FALSE} 
+# 
+```
+
 # Gruppieren und Gruppenoperationen (aggregate & group_by & summarise)
+
+## Gruppieren und Gruppenoperationen - Idee 
+
+## stats::aggregate()
+
+> aggregate(**x**, **by**, **FUN**, ..., simplify = TRUE)
+
+**Beschreibung**
+
+...
+
+**Beispiel**
+
+```{r, results='hide', eval=FALSE} 
+# 
+``` 
+
+## dplyr::group_by()
+
+> group_by(**.data**, **...**, add = FALSE)
+
+**Beschreibung**
+
+...
+
+**Beispiel**
+
+```{r, results='hide', eval=FALSE} 
+# 
+``` 
+
+## dplyr::summarise()
+
+> summarise(**.data**, **...**)
+
+**Beschreibung**
+
+...
+
+**Beispiel**
+
+```{r, results='hide', eval=FALSE} 
+# 
+``` 
 
 # Pivotieren (*apply & dcast)
 
