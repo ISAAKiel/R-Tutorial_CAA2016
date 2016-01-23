@@ -13,9 +13,52 @@ output:
 fig_caption: yes
 ---
 
-# Geschichte 
+# Geschichte, Einordnung und Philosophie
 
-# Struktur
+## Hadley Wickham
+
+\centering
+![](../img/HadleyWickham_small.jpg)
+
+* Hadley Wickham 
+    * Chief Scientist von RStudio und Adjunct Professor of Statistics an der Rice University (Houston, Texas)
+    * Entwickler etlicher zentraler Pakete für R (dplyr, tidyr, stringr, readr, devtools, DBI, ...) 
+    * http://had.co.nz/
+
+## ggplot2
+
+* Kontinuierliche Entwicklung seit 2005 
+
+* github-Repository (3340 commits vom 4.11.07 bis zum 23.1.15)
+
+* Kontext
+    * Vergangenheit
+        * --> base graphics (Ross Ihaka in den 90ern)
+        * -----> "grid"-graphics (Paul Murrell 2000)
+        * ------> lattice (Deepayan Sarkar)
+    * Gegenwart
+        * --------> ggplot2 (Hadley Wickham 2005)
+        * --------> htmlwidgets
+    * Zukunft
+        * --------> ggvis (Hadley Wickham 2014)
+        * ?
+
+## ggplot2
+
+* Philosophie
+    * Make graphics easier
+    * Use a grammar to facilitate research into new types of display
+    * Continuum of expertise:
+        * start simple by using the results of the theory
+        * grow in power by understanding the theory
+        * begin to contribute new components
+        
+> ggplot2 is a plotting system for R, based on the **grammar of graphics**, which tries to take the good parts of base and lattice graphics and avoid bad parts. It takes care of many of the fiddly details that make plotting a hassle (like drawing legends) as well as providing a powerful model of graphics that makes it easy to produce complex multi-layered graphics.
+> https://github.com/hadley/ggplot2
+
+* “The Grammar of Graphics” von Leland Wilkinson 1999/2005
+
+# "Grammatik" und Elemente
 
 # Quellen und Empfehlungen
 
@@ -23,9 +66,12 @@ fig_caption: yes
 
 **Web**  
 
+* http://ggplot2.org/ - ggplot-Homepage 
 * https://github.com/hadley/ggplot2 - Github-Repository zu ggplot2
+* http://docs.ggplot2.org/current/index.html - Online Dokumentation und Hilfe
+* http://had.co.nz/ - Hadley Wickhams Homepage
 
 **Literatur**  
 
 * W. Chang, R graphics cookbook: practical recipes for visualizing data (Sebastopol 2013) 
-* H. Wickham, ggplot2: elegant graphics for data analysis (New York 2009)
+* H. Wickham, ggplot2: elegant graphics for data analysis (New York 2009) und neuere Versionen des Buchs (https://github.com/hadley/ggplot2-book)
