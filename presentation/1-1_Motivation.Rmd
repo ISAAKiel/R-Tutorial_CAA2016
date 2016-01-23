@@ -2,15 +2,11 @@
 title: "Analyse und Visualisierung archäologischer Daten mit R"
 author: "Dirk Seidensticker/Clemens Schmid"
 date: "6. Februar 2016"
+fontsize: 9pt
 output:
   beamer_presentation:
-    colortheme: crane
-    fonttheme: professionalfonts
-    theme: Szeged
-    toc: no
-  ioslides_presentation: default
-  slidy_presentation: default
-fontsize: 8pt
+    theme: "metropolis"
+fig_caption: yes
 ---
 
 
