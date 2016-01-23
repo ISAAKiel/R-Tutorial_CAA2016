@@ -20,3 +20,59 @@ fig_caption: yes
 # Libraries
 
 # Hilfefunktionen
+
+## Hilfe - Zu einer Funktion oder einem Paket
+
+> ?..., ??... und help(...)
+
+**Beschreibung**
+
+Zeigt eine Beschreibung für Pakete, Funktionen und Datensätze an oder durchsucht die Beschreibungen aller installierter Pakete.
+
+**Beispiel**
+
+```{r, results='hide', eval=FALSE}
+# Zeige die Beschreibung für eine bestimmte Funktion,
+# ein Paket oder einen Datensatz
+help(plot)
+?plot
+?graphics::plot
+?graphics
+
+# Durchsuche alle Beschreibungen nach diesem Stichwort
+??plot
+```
+
+## Hilfe - Ich möchte mich in etwas einarbeiten
+
+> vignette() und browseVignettes()
+
+**Beschreibung**
+
+Zeigt eine oder alle vorhandenen Einführungsdokumentationen (Vignettes) an. 
+
+**Beispiel**
+
+```{r, results='hide', eval=FALSE}
+# Eine spezielle Vignette, deren Namen ich kenne, aufrufen
+vignette(topic = "tidy-data", package = "tidyr")
+
+# Zeige alle vorhandenen Vignettes
+vignette()
+browseVignettes()
+```
+
+# Quellen und Empfehlungen
+
+## Weblinks und Literatur
+
+**Web**  
+
+* https://www.r-project.org/ - Homepage der R Foundation  
+* https://www.rstudio.com/ - Homepage von RStudio (IDE)
+* http://www.revolutionanalytics.com/ - Homepage von Revolution Analytics (Parralel computing & Business)
+
+**Literatur**  
+
+* J. Adler, R in a nutshell, Second edition. (Sebastopol 2012)
+* K. Hornik, R FAQ (2015) - https://cran.r-project.org/doc/FAQ/R-FAQ.html

@@ -29,28 +29,6 @@ z.B. Edgar Anderson's Iris Data \underline{iris}.
 irisdaten <- datasets::iris
 ```
 
-
-
-## Hilfe!
-
-> ?..., ??... und help(...)
-
-**Beschreibung**
-
-Zeigt eine Beschreibung für Funktionen und Datensätze an (?... und help...) oder durchsucht die Beschreibungen aller installierter Pakete (??...).
-
-**Beispiel**
-
-```{r, results='hide'}
-?iris
-help(iris)
-?plot
-
-??iris
-```
-
-
-
 ## Objekttypen erfragen
 
 > class(...)
@@ -103,8 +81,6 @@ b <- "Glockenbecher"
 a -> c
 d = 5 
 ```
-
-
 
 ## Vektoren/Arrays
 
