@@ -16,3 +16,16 @@ fig_caption: yes
 # Geschichte 
 
 # Struktur
+
+# Quellen und Empfehlungen
+
+## Weblinks und Literatur
+
+**Web**  
+
+* https://github.com/hadley/ggplot2 - Github-Repository zu ggplot2
+
+**Literatur**  
+
+* W. Chang, R graphics cookbook: practical recipes for visualizing data (Sebastopol 2013) 
+* H. Wickham, ggplot2: elegant graphics for data analysis (New York 2009)
