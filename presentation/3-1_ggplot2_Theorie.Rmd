@@ -1,0 +1,18 @@
+---
+title: "ggplot2 - Theoretische Einführung"
+author: "Dirk Seidensticker/Clemens Schmid"
+date: "6. Februar 2016"
+fontsize: 9pt
+output:
+  beamer_presentation:
+    toc: true
+    theme: "metropolis"
+    pandoc_args: [
+      "--highlight-style=tango"
+    ]
+fig_caption: yes
+---
+
+# Geschichte 
+
+# Struktur

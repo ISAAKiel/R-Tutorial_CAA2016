@@ -1,0 +1,32 @@
+---
+title: "Daten verarbeiten und Vorbereiten"
+author: "Dirk Seidensticker/Clemens Schmid"
+date: "6. Februar 2016"
+fontsize: 9pt
+output:
+  beamer_presentation:
+    toc: true
+    theme: "metropolis"
+    pandoc_args: [
+      "--highlight-style=tango"
+    ]
+fig_caption: yes
+---
+
+# Tidy-Data-Prinzip
+
+# Daten verknüpfen (merging)
+
+# Kategorisierung und Rangfdolgen (factors & levels)
+
+# Duplikate entfernen (unique)
+
+# Sortieren (sort & order)
+
+# Gruppieren und Gruppenoperationen (aggregate & group_by & summarise)
+
+# Pivotieren (*apply & dcast)
+
+# Datenanordnung - wide to long und long to wide (melt)
+
+# Filtern (subset & filter)
