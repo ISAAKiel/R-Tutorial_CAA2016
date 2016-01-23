@@ -13,6 +13,8 @@ packrat/lib*/
 *.exe
 *.o
 *.so
+presentation/*.pdf
+presentation/*.html
 # Packages #
 ############
 *.7z
