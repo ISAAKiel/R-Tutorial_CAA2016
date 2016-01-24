@@ -87,9 +87,25 @@ library(dplyr)
 summarise(group_by(atlant, site), Gewicht_Summe = sum(wt)) -> test
 
 library(magrittr)
-atlant %>% group_by(site) %>% summarise(Gewicht_Summe = sum(wt), Gewicht_Mittelwert = mean(wt)) -> test
+atlant %>% 
+  group_by(site) %>% 
+  summarise(
+    Gewicht_Summe = sum(wt), 
+    Gewicht_Mittelwert = mean(wt)
+    ) -> test
 
-u <- function(x){y <- mean(x); z <- sum(x); return(c(z,y))}
+atlant %>% 
+  group_by(site, size) %>% 
+  summarise(
+    Gewicht_Summe = sum(wt), 
+    Gewicht_Mittelwert = mean(wt)
+  ) -> test2
+
+u <- function(x){
+  y <- mean(x)
+  z <- sum(x)
+  return(c(z,y))
+  }
 aggregate(wt ~ site, atlant , u)
 
 write.table(atlant, file = "data/AtlantData1.csv", sep = "\t")

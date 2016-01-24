@@ -16,7 +16,7 @@ fig_caption: yes
 
 # Tidy-Data-Prinzip
 
-# Daten verknüpfen (merge)
+# Daten verknüpfen (%in%, merge)
 
 ## Daten verknüpfen - Idee
 
