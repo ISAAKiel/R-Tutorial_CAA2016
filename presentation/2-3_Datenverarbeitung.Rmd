@@ -20,12 +20,29 @@ fig_caption: yes
 
 ## Daten verknüpfen - Idee
 
+Zusammenführen von Informationen aus verschiedenen Tabellen.
+
+![](../img/2-3_merge.png)
+
+Kontext SQL: Join-Operationen
+
 ## base::merge()
 
 > merge(**x**, **y**, **by** = intersect(names(x), names(y)),
       **by.x** = by, **by.y** = by, **all** = FALSE, **all.x** = all, **all.y** = all,
       sort = TRUE, **suffixes** = c(".x",".y"),
       incomparables = NULL, ...)
+
+**Beschreibung**
+
+...
+
+**Beispiel**
+
+## base::match()
+
+> match(**x**, **table**, **nomatch** = NA_integer_, incomparables = NULL)
+> x **%in%** table
 
 **Beschreibung**
 
@@ -40,6 +57,8 @@ fig_caption: yes
 # Kategorisierung und Rangfolgen (factor & levels)
 
 ## Kategorisierung und Rangfolgen - Idee
+
+![](../img/2-3_factor.png)
 
 ## base::factor()
 
@@ -73,6 +92,8 @@ fig_caption: yes
 # Duplikate entfernen (unique & duplicated)
 
 ## Duplikate entfernen - Idee 
+
+![](../img/2-3_unique.png)
 
 ## base::unique()
 
@@ -108,6 +129,8 @@ fig_caption: yes
 
 ## Sortieren - Idee 
 
+![](../img/2-3_sort.png)
+
 ## base::sort()
 
 > sort(**x**, **decreasing** = FALSE, na.last = NA, ...)
@@ -139,6 +162,8 @@ fig_caption: yes
 # Gruppieren und Gruppenoperationen (aggregate & group_by & summarise)
 
 ## Gruppieren und Gruppenoperationen - Idee 
+
+![](../img/2-3_group.png)
 
 ## stats::aggregate()
 
