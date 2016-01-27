@@ -1,0 +1,63 @@
+--- 
+title: "Anwendung 3: Barplot" 
+author: "Dirk Seidensticker/Clemens Schmid" 
+date: "6. Februar 2016" 
+fontsize: 8pt 
+output: 
+  beamer_presentation: 
+    theme: "metropolis" 
+    pandoc_args: [ 
+      "--highlight-style=tango" 
+    ] 
+fig_caption: yes 
+---
+
+# Anwendung 3: Barplot
+
+ggplot2 und die Daten laden:
+```{r} 
+library(ggplot2)
+```
+
+```{r, eval=FALSE} 
+df <- read.csv("data/AtlantPottery.csv", sep = '\t')
+```
+
+```{r, echo=FALSE} 
+df <- read.csv("C:/Users/DirkSeidenticker/Dropbox/dev/R-Tutorial_CAA2016/data/AtlantPottery.csv", sep = '\t')
+```
+
+```{r, echo=FALSE} 
+as.factor(df$size) -> df$size
+as.factor(df$vesselShape) -> df$vesselShape
+df$feature_simple <- as.factor(ifelse(df$feature != "surface", "excavation", "surface"))
+```
+
+# Anwendung 3: Barplot
+
+Einfacher Barplot
+
+```{r, message=FALSE, fig.width=10, fig.height=6} 
+ggplot(df, aes(vesselShape)) + 
+  geom_bar()
+```
+
+# Anwendung 3: Barplot
+
+Facet
+
+```{r, message=FALSE, fig.width=10, fig.height=5.5} 
+ggplot(df, aes(vesselShape)) + 
+  geom_bar() + 
+  facet_wrap(~ feature_simple)
+```
+
+# Anwendung 3: Barplot
+
+Facet-Grid
+
+```{r, message=FALSE, fig.width=10, fig.height=5.5} 
+ggplot(df, aes(vesselShape)) + 
+  geom_bar() + 
+  facet_grid(feature ~ site)
+```

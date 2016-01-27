@@ -13,13 +13,25 @@ fig_caption: yes
 # Einleitung
 ## About us
 
-| Dirk Seidensticker | Clemens Schmid |
-|--------------------|----------------|
-| seit 2015: Wiss. Mitarbeiter der For- | seit 2015: Masterstudium CAU Kiel |
-| schungsstelle Afrika (Universität zu Köln)  | 20??-2015: Mitarbeit im Forschungs-Projekt |
-| seit 2012: Promotion an der Universität | "Das kupferzeitliche Gräberfeld Varna I" |
-| zu Köln | |
-| **Python, R, SQL**  | **R, ...** |
+\begin{columns}
+\begin{column}{0.48\textwidth}
+Dirk Seidensticker
+\begin{itemize}
+\item seit 2015: Wiss. Mitarbeiter der Forschungsstelle Afrika (Universität zu Köln)
+\item seit 2012: Promotion an der Universität zu Köln
+\item \textbf{Python, R, SQL}
+\end{itemize}
+\end{column}
+
+\begin{column}{0.48\textwidth}
+Clemens Schmid
+\begin{itemize}
+\item seit 2015: Masterstudium CAU Kiel
+\item 20??-2015: Mitarbeit im Forschungs-Projekt "Das kupferzeitliche Gräberfeld Varna~I"
+\item \textbf{R, ...}
+\end{itemize}
+\end{column}
+\end{columns}
 
 
 ## Data Sciences
