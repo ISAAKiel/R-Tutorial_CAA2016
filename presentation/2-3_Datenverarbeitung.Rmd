@@ -50,7 +50,8 @@ merge(x = R, y = S, by.x = "V3", by.y = "V6", all.x = TRUE)
 
 ## base::match()
 
-> match(**x**, **table**, **nomatch** = NA_integer_, incomparables = NULL)
+> match(**x**, **table**, **nomatch** = NA_integer_, incomparables = NULL)  
+
 > x **%in%** table
 
 **Beschreibung**
@@ -90,15 +91,16 @@ The function factor is used to encode a vector as a factor (the terms ‘categor
 
 **Beispiel**
 
-```{r, results='hide', eval=FALSE} 
+```{r} 
 R <- data.frame(V1 = c(1.1,1.2,1.3), V2 = c(1,2,3))
-
-R$V1 <- as.factor(R$V1)
+R$V1 <- as.factor(x = R$V1)
+R$V1
 ```
 
 ## base::levels()
 
 > levels(**x**)
+
 > levels(**x**) <- value
 
 **Beschreibung**
@@ -109,9 +111,7 @@ levels provides access to the levels attribute of a variable. The first form ret
 
 ```{r} 
 R <- data.frame(V1 = c(1.1,1.2,1.3), V2 = c(1,2,3))
-
-levels(R$V1) <- c(1.3,1.2,1.1)
-
+levels(x = R$V1) <- c(1.3,1.2,1.1)
 R$V1
 ```
 
@@ -132,12 +132,13 @@ Duplikate entfernen und Bandbreite einer Merkmalsausprägung erfassen: "Was gibt
 
 **Beschreibung**
 
-...
+unique returns a vector, data frame or array like x but with duplicate elements/rows removed.
 
 **Beispiel**
 
-```{r, results='hide', eval=FALSE} 
-# 
+```{r} 
+R <- data.frame(V1 = c(1,1,1), V2 = c(2,2,2), V3 = c("A","A","B"))
+unique(x = R)
 ```
 
 ## base::duplicated()
@@ -147,19 +148,25 @@ Duplikate entfernen und Bandbreite einer Merkmalsausprägung erfassen: "Was gibt
 
 **Beschreibung**
 
-...
+duplicated() determines which elements of a vector or data frame are duplicates of elements with smaller subscripts, and returns a logical vector indicating which elements (rows) are duplicates.
 
 **Beispiel**
 
-```{r, results='hide', eval=FALSE} 
-# 
+```{r} 
+R <- data.frame(V1 = c(1,1,1), V2 = c(2,2,2), V3 = c("A","A","B"))
+duplicated(x = R, fromLast = TRUE)
+any(duplicated(R))
 ```
 
 # Sortieren (sort & order)
 
 ## Sortieren - Idee 
 
+**Werte und Wertekombinationen in eine Reihenfolge bringen**
+
 ![](../img/2-3_sort.png)
+
+Sortieren läuft für verschiedene Datentypen unterschiedlich ab: Vgl. Zahlwerte, Worte, BLOBs, etc. 
 
 ## base::sort()
 
@@ -167,12 +174,13 @@ Duplikate entfernen und Bandbreite einer Merkmalsausprägung erfassen: "Was gibt
 
 **Beschreibung**
 
-...
+Sort a vector or factor into ascending or descending order. 
 
 **Beispiel**
 
-```{r, results='hide', eval=FALSE} 
-# 
+```{r} 
+V <- c("A","F","G","Käsebrot","B","X","Q")
+sort(x = V, decreasing = TRUE)
 ```
 
 ## base::order()
@@ -181,32 +189,44 @@ Duplikate entfernen und Bandbreite einer Merkmalsausprägung erfassen: "Was gibt
 
 **Beschreibung**
 
-...
+order returns a permutation which rearranges its first argument into ascending or descending order, breaking ties by further arguments. 
 
 **Beispiel**
 
-```{r, results='hide', eval=FALSE} 
-# 
+```{r} 
+R <- data.frame(V1 = c(1,1,1), V2 = c(132,78,5), V3 = c("B","A","A"))
+order(R$V3, R$V2)
+R[order(R$V3, R$V2), ]
 ```
 
 # Gruppieren und Gruppenoperationen (aggregate & group_by & summarise)
 
 ## Gruppieren und Gruppenoperationen - Idee 
 
+**Gruppen bilden und gruppenbezogene Fragen stellen**
+
 ![](../img/2-3_group.png)
+
+Gruppen werden immer in Abhängigkeit von Merkmalsausprägungen definiert. 
+
+Gruppenbezogene Fragen lassen nur gruppenbezogene Antworten zu - individuelle Werte gehen verloren. 
 
 ## stats::aggregate()
 
-> aggregate(**x**, **by**, **FUN**, ..., simplify = TRUE)
+> aggregate(**x**, **by**, **FUN**, ..., simplify = TRUE)  
+
+> aggregate(**formula**, **data**, **FUN**, ..., subset, na.action = na.omit)
 
 **Beschreibung**
 
-...
+Splits the data into subsets, computes summary statistics for each, and returns the result in a convenient form.
 
 **Beispiel**
 
-```{r, results='hide', eval=FALSE} 
-# 
+```{r, warning=FALSE} 
+R <- data.frame(V1 = c(3,5,1), V2 = c(3,8,5), V3 = c("B","A","A"))
+aggregate(x = R, by = list(R$V3), FUN = "mean") -> a1
+aggregate(V2~V3, data = R, FUN = "sum")
 ``` 
 
 ## dplyr::group_by()
@@ -215,12 +235,16 @@ Duplikate entfernen und Bandbreite einer Merkmalsausprägung erfassen: "Was gibt
 
 **Beschreibung**
 
-...
+The group_by function takes an existing tbl and converts it into a grouped tbl where operations are performed "by group".
 
 **Beispiel**
+```{r, echo=FALSE, message=FALSE} 
+library(dplyr)
+```
 
-```{r, results='hide', eval=FALSE} 
-# 
+```{r}
+R <- data.frame(V1 = c(3,5,1), V2 = c(3,8,5), V3 = c("B","A","A"))
+group_by(R, V3)
 ``` 
 
 ## dplyr::summarise()
@@ -229,12 +253,14 @@ Duplikate entfernen und Bandbreite einer Merkmalsausprägung erfassen: "Was gibt
 
 **Beschreibung**
 
-...
+Summarise multiple values to a single value.
 
 **Beispiel**
 
-```{r, results='hide', eval=FALSE} 
-# 
+```{r, message=FALSE} 
+R <- data.frame(V1 = c(4,5,1), V2 = c(3,8,5), V3 = c("B","A","A"))
+R.g <- group_by(R, V3)
+summarise(R.g, Mittwelwert = mean(V1), Summe = sum(V2))
 ``` 
 
 # Pivotieren (*apply & dcast)
