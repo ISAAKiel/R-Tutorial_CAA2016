@@ -25,7 +25,7 @@ fig_caption: yes
 
 * Eine große Anzahl von existierenden Zusatzpaketen (**libraries**) aus Community-Entwicklung ergänzen die R-Funktionalität - **eigene Funktionen** können unmittelbar entworfen und implementiert werden
 
-* R kann mit anderen Programmiersprachen wie GRASS, Perl, Python, **C**, Java, **Fortran** und **JavaScript** verbunden werden
+* R kann mit anderen Programmiersprachen wie **Python**, **C**, **Java**, **Fortran** und **JavaScript** verbunden werden
 
 * R kann sowohl interaktiv, also im **Einzelbefehlsmodus**, als auch als **Skriptsprache** und im Batch-Modus verwendet werden
 
