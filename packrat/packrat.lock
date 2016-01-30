@@ -1,6 +1,6 @@
 PackratFormat: 1.4
 PackratVersion: 0.4.4
-RVersion: 3.2.2
+RVersion: 3.2.3
 Repos: CRAN=http://cran.rstudio.com/
 
 Package: BH
@@ -206,6 +206,17 @@ Package: magrittr
 Source: CRAN
 Version: 1.5
 Hash: bdc4d48c3135e8f3b399536ddf160df4
+
+Package: mapproj
+Source: CRAN
+Version: 1.2-4
+Hash: e4c4eaf5289ffa74413a9cd71584cb1d
+Requires: maps
+
+Package: maps
+Source: CRAN
+Version: 3.0.2
+Hash: 84f1911e3cc93097d59535cb996e2c8a
 
 Package: markdown
 Source: CRAN
