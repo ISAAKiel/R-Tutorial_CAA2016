@@ -69,7 +69,11 @@ library(ggplot2)
 **data**: Daten, die visualisiert werden sollen
 
 ```{r} 
-R <- data.frame(V1 = c(1,2,3,4), V2 = c(3.5,4.3,5.6,6.5), V3 = c("A","A","B","A"))
+R <- data.frame(
+  V1 = c(1,2,3,4), 
+  V2 = c(3.5,4.3,5.6,6.5), 
+  V3 = c("A","A","B","A")
+  )
 
 R
 ```
@@ -81,7 +85,7 @@ ggplot(data = R)
 
 ## data - aes
 
-**aes**thetic mappings: Zuweisung, wie einzelne Variablen aus dem Datenbestand in der Grafik veranschaulicht werden sollen - z.B. durch Farbe, Form, Größe etc.
+**aes**thetic mappings: Zuweisung, wie einzelne Variablen aus dem Datenbestand in der Grafik veranschaulicht werden sollen - z.B. durch Farbe, Form, Größe etc.  
 
 ```{r} 
 R
@@ -94,7 +98,7 @@ ggplot(data = R, aes(x = V1, y = V2, colour = V3))
 
 ## layers - geoms
 
-**geom**etric objects: Elemente, aus denen sich der Plot zusammen setzt - z.B. Punkte, Balken, Linien etc.  
+**geom**etric objects: Elemente, aus denen sich der Plot zusammen setzt - z.B. Punkte, Balken, Linien etc. (definiert den Plottyp)
 
 ```{r, fig.width=6, fig.height=2.5} 
 ggplot(data = R, aes(x = V1, y = V2, colour = V3)) +
@@ -122,7 +126,7 @@ ggplot(data = R, aes(x = V3, fill = V3)) +
 
 ## scales
 
-**scales**: Spezifizierung der Zuordnung von Daten zu Grafischer Veranschaulichung (data -> aes). Scales steuern die Erstellung von Legenden und (bis zu einem gewissen Grad) Achsen
+**scales**: Spezifizierung der Zuordnung von Daten zu grafischer Veranschaulichung (data -> aes). Scales steuern die Erstellung von Legenden
 
 ```{r, fig.width=6, fig.height=2.5} 
 ggplot(data = R, aes(x = V3, fill = V3)) +
@@ -161,7 +165,8 @@ ggplot(data = R, aes(x = V1, y = V2, colour = V3)) +
 ggplot(data = R, aes(x = V1, y = V2, colour = V3)) +
   geom_point() +
   theme(
-    panel.grid.minor = element_line(colour = '#23373B')
+    panel.grid.minor = element_line(colour = '#23373B'),
+    panel.grid.major = element_line(colour = '#EB811B')
   )
 ```
 
@@ -176,20 +181,44 @@ library(maps)
 ```{r, fig.width=2, fig.height=2, eval = FALSE} 
 world <- map_data("world")
 
-ggplot(world, aes(x = long, y = lat, group = group)) +
+worldmap <- ggplot(world, aes(x = long, y = lat, group = group)) +
   geom_polygon(fill = "white", colour = "black") + 
   coord_map("ortho", orientation = c(48, 9, 0))
+
+worldmap +
+  geom_point(aes(x = 10, y = 53.33), colour = "red", size = 7)
 ```
 
 ## coord
 
 ```{r, fig.width=8, fig.height=8, echo = FALSE, fig.align='center'} 
-ggplot(map_data("world"), aes(x = long, y = lat, group = group)) +
+world <- map_data("world")
+
+worldmap <- ggplot(world, aes(x = long, y = lat, group = group)) +
   geom_polygon(fill = "white", colour = "black") + 
   coord_map("ortho", orientation = c(48, 9, 0))
+
+worldmap +
+  geom_point(aes(x = 10, y = 53.33), colour = "red", size = 7)
 ```
 
 ## Zusammenfassung
+
+**data**: Ausgangsdaten  
+**aes**: Zuweisung Variablen -> Visualisierung. Spezifizierung mit **scales**  
+**geom**: Plottyp/Elemente  
+**stats**: Zusammenfassungsoperationen  
+**faceting**: Mehrere Teilplots erstellen  
+**theme**: Plotlayout/Design  
+**coord**: Koordinatensystem  
+
+* ggplot(**data**, **aes**()) +  
+    * **geom**_...() +  
+    * **geom**_...(**aes**(), **stat**) +  
+    * **scale**\_..._...() +  
+    * **facet**_...(~) +  
+    * **theme**_...() +  
+    * **coord**_...()
 
 # Quellen und Empfehlungen
 
