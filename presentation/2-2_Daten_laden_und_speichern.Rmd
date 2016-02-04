@@ -1,0 +1,62 @@
+---
+title: "Analyse und Visualisierung archäologischer Daten mit R"
+author: "Dirk Seidensticker/Clemens Schmid"
+date: "6. Februar 2016"
+fontsize: 9pt
+output:
+  beamer_presentation:
+    theme: "metropolis"
+fig_caption: yes
+---
+
+
+# Daten verstehen und beschreiben mit R
+
+## Daten laden und speichern
+
+```{r, eval=FALSE} 
+df <- read.csv("data/AtlantPottery.csv")
+```
+
+
+Fehlermeldung:
+
+<code>Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  doppelte 'row.names' sind nicht zulässig</code>
+  
+
+## Daten laden und speichern
+
+```{r, eval=FALSE} 
+df <- read.csv("data/AtlantPottery.csv", sep = '\t')
+```
+
+```{r, echo=FALSE} 
+df <- read.csv("C:/Users/DirkSeidenticker/Dropbox/dev/R-Tutorial_CAA2016/data/AtlantPottery.csv", sep = '\t')
+```
+
+
+## Daten laden und speichern
+
+```{r} 
+head(df)
+```
+
+
+## Daten laden und speichern
+
+### Andere Datenquellen
+
+* **SQLite**: library(RSQLite)
+* **PostGreSQL**: library(RPostgreSQL) 
+* MySQL, Oracle, ODBC (library(RODBC)), MongoDB, ...
+* XML, JSON
+
+```{r, eval=FALSE} 
+library(RSQLite)
+drv <- dbDriver("SQLite")
+con <- dbConnect(drv, "../data/DB.sqlite")
+
+df = dbGetQuery(con, "SELECT * FROM ...")
+head(df)
+```

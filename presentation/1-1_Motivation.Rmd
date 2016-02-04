@@ -33,17 +33,59 @@ Clemens Schmid
 \end{column}
 \end{columns}
 
+## Daten in der Archäologie
 
-## Data Sciences
+\centering
+![](../img/motivation01.png)
+
+\begin{small}(Fotos: K. Jungnickel 2015)\end{small}
+
+
+## Daten in der Informatik
+
+* Datentypen:
+    * **ordinal skalierte Daten** haben eine festgelegte Reihenfolge
+        * Ganze Zahlen und Natürliche Zahlen
+        * (Boolean)
+    * **mononale Daten** sind diskret und zeigen eine qualitative Ausprägung eines Merkmals
+
+
+## Skalenniveaus
+
+![](https://upload.wikimedia.org/wikipedia/commons/e/e3/Skalenniveau.png)
+
+\begin{small}(https://de.wikipedia.org/wiki/Datei:Skalenniveau.png)\end{small}
+
+
+## Fragestellungen
+
+
+## Reproduzierbarkeit
 
 \centering
 ![](http://i0.wp.com/sciencereview.berkeley.edu/wp-content/uploads/2014/04/spring_2014_azam_05.jpg)
 
 \begin{small}A. Azam, The first rule of data science. The Berkeley Science Review. <http://berkeleysciencereview.com/article/first-rule-data-science/> [Stand: 10. Januar 2016].\end{small}
 
-## Daten in der Archäologie
 
+## Vor- und Nachteile von R
 
+\begin{columns}
+\begin{column}{0.48\textwidth}
+Vorteile
+\begin{itemize}
+\item Reproduzierbarkeit und hohe Nachnutzbarkeit
+\item Skalierbarkeit
+\item Erweiterbarkeit
+\end{itemize}
+\end{column}
 
-## Analyse-Pipeline
+\begin{column}{0.48\textwidth}
+Nachteile
+\begin{itemize}
+\item Hohe Einstiegs-/Lernschwelle
+\item Teilweise 'krude' Syntax
+\end{itemize}
+\end{column}
+\end{columns}
 
