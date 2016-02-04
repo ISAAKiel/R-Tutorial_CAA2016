@@ -14,8 +14,6 @@ output:
 fig_caption: yes 
 ---
 
-# Tidy-Data-Prinzip
-
 # Daten verknüpfen (%in%, merge)
 
 ## Daten verknüpfen - Idee
