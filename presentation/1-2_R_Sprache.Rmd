@@ -13,21 +13,36 @@ output:
 fig_caption: yes
 ---
 
-# Einführung
+# Grundlagen
 
 ## Grundlagen
 
 ![](../img/Rlogo_wide.png)
 
-* R ist eine Programmiersprache zur **statistischen Datenverarbeitung und -visualisierung**
+* R ist eine **vollwertige Programmiersprache** zur statistischen **Datenverarbeitung und -visualisierung**
+    * Eigene Paradigmen, Syntax, Datenstrukturen/formate, Klassen (Objektorienterung), Konventionen, Normendiskussion, Weiterentwicklung...
 
 * R ist **quelloffen** (unter GNU GPL) läuft unter diversen **UNIX-**, **Linux-** und Unix-ähnlichen Betriebsystemen, sowie auf **Windows** und **Mac OS X**
 
 * Eine große Anzahl von existierenden Zusatzpaketen (**libraries**) aus Community-Entwicklung ergänzen die R-Funktionalität - **eigene Funktionen** können unmittelbar entworfen und implementiert werden
 
-* R kann mit anderen Programmiersprachen wie **Python**, **C**, **Java**, **Fortran** und **JavaScript** verbunden werden
+* R kann mit anderen Programmiersprachen wie **Python**, **C**, **Ruby**, **Fortran** und **JavaScript** etc. verbunden werden
 
-* R kann sowohl interaktiv, also im **Einzelbefehlsmodus**, als auch als **Skriptsprache** und im Batch-Modus verwendet werden
+## Grundlagen
+
+* R ist eine **Interpretersprache**, die nicht kompiliert werden muss 
+    * R muss installiert sein, um ein Skript ausführen zu können 
+    * Mit dem Paket `compiler` können Funktionen zu Byte-Code kompiliert werden
+
+* R ist **langsam** (Primzahlbeispiel R-Bloggers: Python\*17, C\*270)
+
+* R hält Arbeitsdaten im **Hauptspeicher** vor
+
+* Es gibt mehrere GUIs und IDEs für R: R auf CMD und Bash, **R GUI**, R commander,  **RStudio**, ...
+
+> „To understand computations in R, two slogans are helpful: **Everything that exists is an object. Everything that happens is a function call.**“ - John Chambers 2014
+
+# Geschichte
 
 ## Geschichte - S
 
@@ -52,22 +67,6 @@ fig_caption: yes
 * \underline{2015:} Gründung des **R-Consortium** (Microsoft, RStudio, HP, Google, Oracle etc.)
 
 * Aktuelle Version: **R 2.3.2** "Wooden Christmas-Tree"  
-
-# Funktionsprinzip 
-
-## Aspekte
-
-* Interpreter, Compiler und GUIs
-
-* Objekte und Funktionen
-
-> „To understand computations in R, two slogans are helpful: Everything that exists is an object. Everything that happens is a function call.“ - John Chambers 2014
-
-* Syntax
-
-* Datenstrukturen
-
-* Klassen
 
 # Hilfefunktionen
 
@@ -120,13 +119,14 @@ browseVignettes()
 
 * https://www.r-project.org/ - Homepage der R Foundation  
 * https://www.rstudio.com/ - Homepage von RStudio
-* http://www.revolutionanalytics.com/ - Homepage von Revolution Analytics
 * https://www.r-consortium.org/ - Homepage des R Consortium
 * https://de.wikipedia.org/wiki/R_(Programmiersprache) - Deutscher Wiki-Artikel zu R (sehr gut!)
 * https://de.wikibooks.org/wiki/GNU_R - Wikibook zur Einführung in R
+* http://www.r-bloggers.com/how-slow-is-r-really/ - Einfacher Geschwindigkeitsvergleich
 
 **Literatur**  
 
 * J. Adler, R in a nutshell, Second edition. (Sebastopol 2012)
 * J. M. Chambers, A Statistical Data Language. In: R. C. Milton, J. A. Nelder (Hrsg.), Statistical Computation. (New York 1969), 179-199.
+* J. M. Chambers, Object-Oriented Programming, Functional Programming and R. In: Statistical Science. 2/29, 2014, 167–180.
 * K. Hornik, R FAQ (2015) - https://cran.r-project.org/doc/FAQ/R-FAQ.html
