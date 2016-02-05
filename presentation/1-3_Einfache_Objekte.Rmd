@@ -19,7 +19,7 @@ fig_caption: yes
 
 * R speichert Daten, Zwischenergebnisse, Funktionen etc. in verschiedenen Strukturen im **Hauptspeicher**
 
-* Kategorien primitiver Objekttypen: **Basic Vector** (Vektor mit einem Datentyp), **Compund objects** (Listen und S4-Objekte), Special objects, R language, **Functions**, Internal, Bytecode Objects 
+* Kategorien primitiver Objekttypen: **Basic Vector** (Vektor mit einem Datentyp), **Compound objects** (Listen und S4-Objekte), Special objects, R language, **Functions**, Internal, Bytecode Objects 
 
 * Datentypen in der praktischen Anwendung: **vectors**, lists, matrices, arrays, factors, **data.frames**, timeseries, formulas, shingles, connections
 

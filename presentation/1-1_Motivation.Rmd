@@ -15,7 +15,7 @@ fig_caption: yes
 
 \begin{columns}
 \begin{column}{0.48\textwidth}
-Dirk Seidensticker
+\textbf{Dirk Seidensticker}
 \begin{itemize}
 \item seit 2015: Wiss. Mitarbeiter der Forschungsstelle Afrika (Universität zu Köln)
 \item seit 2012: Promotion an der Universität zu Köln
@@ -24,11 +24,10 @@ Dirk Seidensticker
 \end{column}
 
 \begin{column}{0.48\textwidth}
-Clemens Schmid
+\textbf{Clemens Schmid}
 \begin{itemize}
 \item seit 2015: Masterstudium CAU Kiel
-\item 20??-2015: Mitarbeit im Forschungs-Projekt "Das kupferzeitliche Gräberfeld Varna~I"
-\item \textbf{R, ...}
+\item \textbf{R, SQL}
 \end{itemize}
 \end{column}
 \end{columns}
@@ -55,9 +54,6 @@ Clemens Schmid
 ![](https://upload.wikimedia.org/wikipedia/commons/e/e3/Skalenniveau.png)
 
 \begin{small}(https://de.wikipedia.org/wiki/Datei:Skalenniveau.png)\end{small}
-
-
-## Fragestellungen
 
 
 ## Reproduzierbarkeit
@@ -88,4 +84,3 @@ Nachteile
 \end{itemize}
 \end{column}
 \end{columns}
-

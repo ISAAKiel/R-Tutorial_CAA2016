@@ -1,5 +1,5 @@
 ---
-title: "Analyse und Visualisierung archäologischer Daten mit R"
+title: "Einfache Funktionen"
 author: "Dirk Seidensticker/Clemens Schmid"
 date: "6. Februar 2016"
 fontsize: 9pt
@@ -9,8 +9,8 @@ output:
 fig_caption: yes
 ---
 
+# Einfache Funktionen
 
-# Einleitung
 ## Einfache Funktionen
 
 *Eine **Funktion** ist ein Programmkonstrukt, innerhalb dessen Quellcode strukturiert eingebaut ist um ihn an anderer Stelle und mehrfach wiederverwenden zu können. Die Funktion gibt das Resultat direkt zurück und kann daher innerhalb anderer Ausdrücke verwendet werden* (nach https://de.wikipedia.org/wiki/Funktion_(Programmierung)).
@@ -20,6 +20,7 @@ Kurz: ein Programm innerhalb eines Programms.
 ## Funktionen in R
 
 ```{r, eval=FALSE} 
+# nicht lauffähig
 function(Parameter1, Parameter2, ...) {
         Anweisungen;
         }
@@ -30,7 +31,7 @@ function(Parameter1, Parameter2, ...) {
 
 ## Funktionen in R
 
-```{r, eval=FALSE} 
+```{r} 
 myfunc <- function(x,y){ # Funktion mit den Parametern x und y
           z <- x+y;      # Summe von x und y in z speichern
           return(z)      # z zurückgeben

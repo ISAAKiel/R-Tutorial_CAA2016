@@ -1,12 +1,11 @@
 --- 
-title: "Daten verarbeiten und vorbereiten" 
+title: "Deskriptive Statistik" 
 author: "Dirk
 Seidensticker/Clemens Schmid" 
 date: "6. Februar 2016" 
 fontsize: 9pt 
 output: 
   beamer_presentation: 
-    toc: true 
     theme: "metropolis" 
     pandoc_args: [ 
       "--highlight-style=tango" 
@@ -18,12 +17,8 @@ fig_caption: yes
 
 ## Daten laden
 
-```{r, eval=FALSE} 
-atlant <- read.csv("data/AtlantData1.csv", sep = "\t", header = TRUE)
-```
-
-```{r, echo=FALSE} 
-atlant <- read.csv("C:/Users/DirkSeidenticker/Dropbox/dev/R-Tutorial_CAA2016/data/AtlantData1.csv", sep = "\t", header = TRUE)
+```{r} 
+atlant <- read.csv("../data/AtlantData1.csv", sep = "\t", header = TRUE)
 ```
 
 ```{r} 
@@ -31,7 +26,7 @@ head(atlant)
 ```
 
 
-## Standartfunktionen
+## Standardfunktionen
 
 ```{r} 
 min(atlant$muendungsD)
@@ -141,4 +136,3 @@ head(a, n = 3)
 ```{r} 
 chisq.test(a)
 ```
-

@@ -1,5 +1,5 @@
 ---
-title: "Analyse und Visualisierung archäologischer Daten mit R"
+title: "Daten laden und speichern"
 author: "Dirk Seidensticker/Clemens Schmid"
 date: "6. Februar 2016"
 fontsize: 9pt
@@ -9,15 +9,14 @@ output:
 fig_caption: yes
 ---
 
+# Daten aus dem Dateisystem laden
 
-# Daten verstehen und beschreiben mit R
-
-## Daten laden und speichern
+## Daten aus dem Dateisystem laden
 
 ```{r, eval=FALSE} 
-df <- read.csv("data/AtlantPottery.csv")
+# nicht lauffähig
+df <- read.csv("../data/AtlantPottery.csv")
 ```
-
 
 Fehlermeldung:
 
@@ -25,27 +24,29 @@ Fehlermeldung:
   doppelte 'row.names' sind nicht zulässig</code>
   
 
-## Daten laden und speichern
+## Daten aus dem Dateisystem laden
 
-```{r, eval=FALSE} 
-df <- read.csv("data/AtlantPottery.csv", sep = '\t')
+```{r} 
+df <- read.csv("../data/AtlantPottery.csv", sep = '\t')
 ```
 
 ```{r, echo=FALSE} 
-df <- read.csv("C:/Users/DirkSeidenticker/Dropbox/dev/R-Tutorial_CAA2016/data/AtlantPottery.csv", sep = '\t')
+# df <- read.csv(
+# "C:/Users/DirkSeidenticker/Dropbox/dev/R-Tutorial_CAA2016/data/AtlantPottery.csv", 
+# sep = '\t'
+#)
 ```
 
 
-## Daten laden und speichern
+## Daten aus dem Dateisystem laden
 
 ```{r} 
 head(df)
 ```
 
+# Andere Datenquellen
 
-## Daten laden und speichern
-
-### Andere Datenquellen
+## Datenbanken und XML
 
 * **SQLite**: library(RSQLite)
 * **PostGreSQL**: library(RPostgreSQL) 
@@ -53,6 +54,7 @@ head(df)
 * XML, JSON
 
 ```{r, eval=FALSE} 
+# nicht lauffähig
 library(RSQLite)
 drv <- dbDriver("SQLite")
 con <- dbConnect(drv, "../data/DB.sqlite")
