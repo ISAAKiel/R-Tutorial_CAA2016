@@ -66,7 +66,7 @@ fig_caption: yes
 
 * \underline{2015:} Gründung des **R-Consortium** (Microsoft, RStudio, HP, Google, Oracle etc.)
 
-* Aktuelle Version: **R 2.3.2** "Wooden Christmas-Tree"  
+* Aktuelle Version: **R 3.2.3** "Wooden Christmas-Tree"  
 
 # Hilfefunktionen
 

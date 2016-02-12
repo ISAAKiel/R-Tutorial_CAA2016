@@ -19,11 +19,7 @@ ggplot2 und die Daten laden:
 library(ggplot2)
 ```
 
-```{r, echo=FALSE} 
-df <- read.csv("C:/Users/DirkSeidenticker/Dropbox/dev/R-Tutorial_CAA2016/data/AtlantPottery.csv", sep = '\t')
-```
-
-```{r, eval=FALSE} 
+```{r} 
 df <- read.csv("data/AtlantPottery.csv", sep = '\t')
 ```
 
@@ -133,7 +129,12 @@ ggplot(df, aes(x = maxD, y = muendungsH, color = site, shape = vesselShape)) +
 Position der Legende & fertiger Plot
 
 ```{r, warning=FALSE, fig.width=10, fig.height=5} 
-ggplot(df, aes(x = maxD, y = muendungsH, color = site, shape = vesselShape)) + 
+ggplot(df, aes(
+  x = maxD, 
+  y = muendungsH, 
+  color = site, 
+  shape = vesselShape)
+  ) + 
   geom_point(size = 4) + 
   coord_equal() + 
   scale_shape_manual(values = 1:(1+length(unique(df$vesselShape)))) + 

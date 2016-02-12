@@ -1,7 +1,6 @@
 --- 
 title: "Daten verarbeiten und vorbereiten" 
-author: "Dirk
-Seidensticker/Clemens Schmid" 
+author: "Dirk Seidensticker/Clemens Schmid" 
 date: "6. Februar 2016" 
 fontsize: 9pt 
 output: 
@@ -117,7 +116,7 @@ R$V1
 
 ## Duplikate entfernen - Idee 
 
-**Finden und entfernen doppelter Werte und Wertekombinationen**
+**Finden und Entfernen doppelter Werte und Wertekombinationen**
 
 ![](../img/2-3_unique.png)
 
@@ -295,21 +294,21 @@ a
 ```
 
 
-## Berechnungen in Abhängikeit zu einer Variable
+## Berechnungen in Abhängigkeit zu einer Variable
 
 ```{r} 
 tapply(atlant$wt, list(atlant$site), sum)
 ```
 
 
-## Berechnungen in Abhängikeit zu einer Variable
+## Berechnungen in Abhängigkeit zu einer Variable
 
 ```{r} 
 data.frame(tapply(atlant$wt, list(atlant$site), sum))
 ```
 
 
-## Berechnungen in Abhängikeit zu einer Variable
+## Berechnungen in Abhängigkeit zu einer Variable
 
 ```{r} 
 data.frame(tapply(atlant$wt, list(atlant$site), 
@@ -317,7 +316,7 @@ data.frame(tapply(atlant$wt, list(atlant$site),
 ```
 
 
-## Berechnungen in Abhängikeit zu zwei Variablen ####
+## Berechnungen in Abhängigkeit zu zwei Variablen ####
 
 ```{r} 
 b <- data.frame(tapply(atlant$wt, 
@@ -328,21 +327,25 @@ b
 ```
 
 
-## Auszählen in Abhängikeit zu drei Variablen
+## Auszählen in Abhängigkeit zu drei Variablen
 
 ```{r} 
 library(reshape2)
 
-dcast(atlant, site + feature ~ size)
+pivot <- dcast(atlant, site + feature ~ size) 
+
+head(pivot)
 ```
 
 
-## Berechnungen in Abhängikeit zu drei Variablen
+## Berechnungen in Abhängigkeit zu drei Variablen
 
 ```{r} 
-dcast(atlant, site + feature ~ size, 
+pivot2 <- dcast(atlant, site + feature ~ size, 
       value.var = "wt", 
       fun.aggregate = sum)
+
+head(pivot2)
 ```
 
 # Datenanordnung - wide to long und long to wide (melt)
@@ -373,10 +376,6 @@ head(atlant_sites.size)
 colnames(atlant_sites.size) <- c('site', 'size', 'qty')
 
 head(atlant_sites.size)
-
-# write.table(atlant_sites.size, 
-#             "data/AtlantPottey_Sites-Sizes.csv", 
-#             sep = '\t')
 ```
 
 

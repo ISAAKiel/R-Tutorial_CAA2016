@@ -17,7 +17,7 @@ fig_caption: yes
 * Grundsätze
     * Behandle deine Roh-Daten als read-only!
     * Behandle die generierten Abbildungen so, dass du sie jederzeit löschen kannst, da sie komplett durch dein Script erstellt werden.
-    * Halte Funktionen und das Skript, das sie ausführt getrennt voneinander.
+    * Halte Funktionen und das Skript, das sie ausführt, getrennt voneinander.
 
 siehe <http://nicercode.github.io/blog/2013-04-05-projects/>
 

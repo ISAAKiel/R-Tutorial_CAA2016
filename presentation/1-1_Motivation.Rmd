@@ -39,30 +39,12 @@ fig_caption: yes
 
 \begin{small}(Fotos: K. Jungnickel 2015)\end{small}
 
-
-## Daten in der Informatik
-
-* Datentypen:
-    * **ordinal skalierte Daten** haben eine festgelegte Reihenfolge
-        * Ganze Zahlen und Natürliche Zahlen
-        * (Boolean)
-    * **mononale Daten** sind diskret und zeigen eine qualitative Ausprägung eines Merkmals
-
-
-## Skalenniveaus
-
-![](https://upload.wikimedia.org/wikipedia/commons/e/e3/Skalenniveau.png)
-
-\begin{small}(https://de.wikipedia.org/wiki/Datei:Skalenniveau.png)\end{small}
-
-
 ## Reproduzierbarkeit
 
 \centering
 ![](http://i0.wp.com/sciencereview.berkeley.edu/wp-content/uploads/2014/04/spring_2014_azam_05.jpg)
 
 \begin{small}A. Azam, The first rule of data science. The Berkeley Science Review. <http://berkeleysciencereview.com/article/first-rule-data-science/> [Stand: 10. Januar 2016].\end{small}
-
 
 ## Vor- und Nachteile von R
 
@@ -84,3 +66,20 @@ Nachteile
 \end{itemize}
 \end{column}
 \end{columns}
+
+# Exkurs Datenniveaus
+
+## Daten in der Statistik
+
+* Datentypen:
+    * **ordinal skalierte Daten** haben eine festgelegte Reihenfolge
+        * Ganze Zahlen und Natürliche Zahlen
+        * (Boolean)
+    * **nominale Daten** sind diskret und zeigen eine qualitative Ausprägung eines Merkmals
+
+
+## Skalenniveaus
+
+![](https://upload.wikimedia.org/wikipedia/commons/e/e3/Skalenniveau.png)
+
+\begin{small}(https://de.wikipedia.org/wiki/Datei:Skalenniveau.png)\end{small}

@@ -27,15 +27,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1851"
-     inkscape:window-height="1053"
+     inkscape:window-width="1867"
+     inkscape:window-height="1059"
      id="namedview5932"
      showgrid="false"
-     inkscape:zoom="1.6655529"
-     inkscape:cx="348.02757"
-     inkscape:cy="819.70049"
-     inkscape:window-x="1989"
-     inkscape:window-y="27"
+     inkscape:zoom="1.4508527"
+     inkscape:cx="563.6087"
+     inkscape:cy="723.39257"
+     inkscape:window-x="53"
+     inkscape:window-y="21"
      inkscape:window-maximized="1"
      inkscape:current-layer="g5938" /><metadata
      id="metadata5936"><rdf:RDF><cc:Work
@@ -3430,5 +3430,5 @@
            style="fill:#23373b;fill-opacity:1"
            id="tspan8536">group_by(tabelle1, Mannschaft)</tspan><tspan
            id="tspan4668"
-           style="fill:#eb811b;fill-opacity:1">, mean(Alter)</tspan></tspan></text>
+           style="fill:#eb811b;fill-opacity:1">, mean(Alter))</tspan></tspan></text>
 </g></svg>

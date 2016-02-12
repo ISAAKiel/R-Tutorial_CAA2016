@@ -19,12 +19,8 @@ ggplot2 und die Daten laden:
 library(ggplot2)
 ```
 
-```{r, eval=FALSE} 
-df <- read.csv("data/AtlantPottery.csv", sep = '\t')
-```
-
-```{r, echo=FALSE} 
-df <- read.csv("C:/Users/DirkSeidenticker/Dropbox/dev/R-Tutorial_CAA2016/data/AtlantPottery.csv", sep = '\t')
+```{r} 
+df <- read.csv("../data/AtlantPottery.csv", sep = '\t')
 ```
 
 ```{r, echo=FALSE} 

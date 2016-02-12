@@ -13,7 +13,9 @@ fig_caption: yes
 
 ## Einfache Funktionen
 
-*Eine **Funktion** ist ein Programmkonstrukt, innerhalb dessen Quellcode strukturiert eingebaut ist um ihn an anderer Stelle und mehrfach wiederverwenden zu können. Die Funktion gibt das Resultat direkt zurück und kann daher innerhalb anderer Ausdrücke verwendet werden* (nach https://de.wikipedia.org/wiki/Funktion_(Programmierung)).
+> *Eine **Funktion** ist ein Programmkonstrukt, innerhalb dessen Quellcode strukturiert eingebaut ist um ihn an anderer Stelle und mehrfach wiederverwenden zu können. Die Funktion gibt das Resultat direkt zurück und kann daher innerhalb anderer Ausdrücke verwendet werden* 
+>
+> \- de.wikipedia.org/wiki/Funktion_(Programmierung)
 
 Kurz: ein Programm innerhalb eines Programms.
 
@@ -40,4 +42,4 @@ myfunc <- function(x,y){ # Funktion mit den Parametern x und y
 myfunc(4,6)
 ```
 
-* Besonderheit von R: für die Parameter können Standarwerte vorgegeben werden!
+* Besonderheit von R: für die Parameter können Standardwerte vorgegeben werden!

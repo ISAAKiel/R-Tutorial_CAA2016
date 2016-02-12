@@ -1,5 +1,5 @@
 --- 
-title: "Deskriptive Statistik" 
+title: "Statistik in R" 
 author: "Dirk
 Seidensticker/Clemens Schmid" 
 date: "6. Februar 2016" 
@@ -18,7 +18,10 @@ fig_caption: yes
 ## Daten laden
 
 ```{r} 
-atlant <- read.csv("../data/AtlantData1.csv", sep = "\t", header = TRUE)
+atlant <- read.csv(
+  "../data/AtlantData1.csv", 
+  sep = "\t", 
+  header = TRUE)
 ```
 
 ```{r} 
@@ -63,17 +66,20 @@ summary(atlant$wt)
 
 ## Streuungsparameter
 
-Spannweite
+**Spannweite**
+
 ```{r} 
 max(atlant$wt) - min(atlant$wt)
 ```
 
-Varianz
+**Varianz**
+
 ```{r} 
 var(atlant$wt)
 ```
 
-Standartabweichung
+**Standardabweichung**
+
 ```{r} 
 sd(atlant$wt)
 ```
@@ -86,7 +92,7 @@ sd(atlant$wt)
 var(atlant$wt)
 ```
 
-empirische Varianz
+**empirische Varianz**
 
 $$ var(x) = \frac{\sum_{i = 1}^n (x_{i} - \bar{x})^2}{n}$$
 
@@ -94,11 +100,9 @@ $$ var(x) = \frac{\sum_{i = 1}^n (x_{i} - \bar{x})^2}{n}$$
 (sum( (atlant$wt - mean(atlant$wt) ) ^2) )/(length(atlant$wt) )
 ```
 
-
-
 ## Konzentrationsparameter
 
-> Gini-Koeffizient aus der Lorenz-Kurve (Paket: ineq)
+**Gini-Koeffizient** aus der Lorenz-Kurve (Paket: ineq)
 
 ```{r, echo=FALSE} 
 # install.packages("ineq")
@@ -114,6 +118,10 @@ ineq(atlant$wt,type="Gini")
 ```{r, fig.height = 3} 
 plot(Lc(atlant$wt))
 ```
+
+
+
+# Schließende Statistik
 
 ## Tests auf Lageparameter
 
