@@ -15,7 +15,7 @@ fig_caption: yes
 
 > *Eine **Funktion** ist ein Programmkonstrukt, innerhalb dessen Quellcode strukturiert eingebaut ist um ihn an anderer Stelle und mehrfach wiederverwenden zu können. Die Funktion gibt das Resultat direkt zurück und kann daher innerhalb anderer Ausdrücke verwendet werden* 
 >
-> \- de.wikipedia.org/wiki/Funktion_(Programmierung)
+> -- de.wikipedia.org/wiki/Funktion_(Programmierung)
 
 Kurz: ein Programm innerhalb eines Programms.
 
