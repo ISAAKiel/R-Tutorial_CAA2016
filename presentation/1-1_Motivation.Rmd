@@ -10,62 +10,34 @@ fig_caption: yes
 ---
 
 
+
 # Einleitung
+
 ## About us
 
-\begin{columns}
-\begin{column}{0.48\textwidth}
-\textbf{Dirk Seidensticker}
-\begin{itemize}
-\item seit 2015: Wiss. Mitarbeiter der Forschungsstelle Afrika (Universität zu Köln)
-\item seit 2012: Promotion an der Universität zu Köln
-\item \textbf{Python, R, SQL}
-\end{itemize}
-\end{column}
-
-\begin{column}{0.48\textwidth}
-\textbf{Clemens Schmid}
-\begin{itemize}
-\item seit 2015: Masterstudium CAU Kiel
-\item \textbf{R, SQL}
-\end{itemize}
-\end{column}
-\end{columns}
+|**Dirk Seidensticker**|**Clemens Schmid**|
+|------------------------------------|------------------------------------|
+|seit 2015: Wiss. Mitarbeiter der Forschungsstelle Afrika (Universität zu Köln)|seit 2015: Masterstudium CAU Kiel|
+|seit 2012: Promotion an der Universität zu Köln||
+|**Python, R, SQL**|**R, SQL, Java, C++**|
 
 ## Daten in der Archäologie
 
-\centering
-![](../img/motivation01.png)
-
-\begin{small}(Fotos: K. Jungnickel 2015)\end{small}
+![Fotos: K. Jungnickel 2015](../img/motivation01.png)
 
 ## Reproduzierbarkeit
 
-\centering
-![](http://i0.wp.com/sciencereview.berkeley.edu/wp-content/uploads/2014/04/spring_2014_azam_05.jpg)
-
-\begin{small}A. Azam, The first rule of data science. The Berkeley Science Review. <http://berkeleysciencereview.com/article/first-rule-data-science/> [Stand: 10. Januar 2016].\end{small}
+![A. Azam, The first rule of data science. The Berkeley Science Review. http://berkeleysciencereview.com/article/first-rule-data-science/](http://i0.wp.com/sciencereview.berkeley.edu/wp-content/uploads/2014/04/spring_2014_azam_05.jpg)
 
 ## Vor- und Nachteile von R
 
-\begin{columns}
-\begin{column}{0.48\textwidth}
-Vorteile
-\begin{itemize}
-\item Reproduzierbarkeit und hohe Nachnutzbarkeit
-\item Skalierbarkeit
-\item Erweiterbarkeit
-\end{itemize}
-\end{column}
+|**Vorteile**|**Nachteile**|
+|------------------------------------|------------------------------------|
+|Reproduzierbarkeit und hohe Nachnutzbarkeit|Hohe Einstiegs-/Lernschwelle|
+|Skalierbarkeit|Teilweise 'krude' Syntax|
+|Erweiterbarkeit||
 
-\begin{column}{0.48\textwidth}
-Nachteile
-\begin{itemize}
-\item Hohe Einstiegs-/Lernschwelle
-\item Teilweise 'krude' Syntax
-\end{itemize}
-\end{column}
-\end{columns}
+
 
 # Exkurs Datenniveaus
 
@@ -80,6 +52,4 @@ Nachteile
 
 ## Skalenniveaus
 
-![](https://upload.wikimedia.org/wikipedia/commons/e/e3/Skalenniveau.png)
-
-\begin{small}(https://de.wikipedia.org/wiki/Datei:Skalenniveau.png)\end{small}
+![https://de.wikipedia.org/wiki/Datei:Skalenniveau.png](https://upload.wikimedia.org/wikipedia/commons/e/e3/Skalenniveau.png)
