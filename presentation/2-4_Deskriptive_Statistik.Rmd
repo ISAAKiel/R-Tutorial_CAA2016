@@ -1,16 +1,14 @@
 --- 
-title: "Statistik in R" 
-author: "Dirk
-Seidensticker/Clemens Schmid" 
-date: "6. Februar 2016" 
-fontsize: 9pt 
-output: 
-  beamer_presentation: 
-    theme: "metropolis" 
-    pandoc_args: [ 
-      "--highlight-style=tango" 
-    ] 
-fig_caption: yes 
+title: "Statistik in R"
+author: "Dirk Seidensticker/Clemens Schmid"
+date: "6. Februar 2016"
+output:
+  beamer_presentation:
+    pandoc_args: --highlight-style=tango
+    theme: metropolis
+  slidy_presentation: default
+fontsize: 9pt
+fig_caption: yes
 ---
 
 # Deskriptive Statistik
@@ -28,7 +26,6 @@ atlant <- read.csv(
 head(atlant)
 ```
 
-
 ## Standardfunktionen
 
 ```{r} 
@@ -45,8 +42,6 @@ min(atlant$muendungsD, na.rm = TRUE)
 max(atlant$muendungsD, na.rm = TRUE)
 ```
 
-
-
 ## Lageparameter
 
 ```{r} 
@@ -62,7 +57,6 @@ median(atlant$wt)
 ```{r} 
 summary(atlant$wt)
 ```
-
 
 ## Streuungsparameter
 
