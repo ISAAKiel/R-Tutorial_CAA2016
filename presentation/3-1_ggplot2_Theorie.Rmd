@@ -17,8 +17,7 @@ fig_caption: yes
 
 ## Hadley Wickham
 
-\centering
-![](../img/HadleyWickham_small.jpg)
+![Hadley Wickham](../img/HadleyWickham_small.jpg)
 
 * **Hadley Wickham** 
     * Chief Scientist von **RStudio** und Adjunct Professor of Statistics an der **Rice University** (Houston, Texas)
@@ -57,6 +56,8 @@ fig_caption: yes
 > - https://github.com/hadley/ggplot2
 
 * “The Grammar of Graphics” von Leland Wilkinson 2005: Elemente, die jeder statistischen Grafik zugrunde liegen
+
+
 
 # "Grammatik" und Elemente
 
@@ -121,7 +122,7 @@ ggplot(data = R, aes(x = V1, y = V2, colour = V3)) +
 
 ```{r, fig.width=6, fig.height=2.5} 
 ggplot(data = R, aes(x = V3, fill = V3)) +
-  geom_bar(stats = "count")
+  geom_bar(stat = "count")
 ```
 
 ## scales
@@ -130,7 +131,7 @@ ggplot(data = R, aes(x = V3, fill = V3)) +
 
 ```{r, fig.width=6, fig.height=2.5} 
 ggplot(data = R, aes(x = V3, fill = V3)) +
-  geom_bar(stats = "count") +
+  geom_bar(stat = "count") +
   scale_fill_manual( 
     values = c('A' = '#EB811B', 'B' = '#23373B'),
     guide = FALSE                    
@@ -219,6 +220,8 @@ worldmap +
     * **facet**_...(~) +  
     * **theme**_...() +  
     * **coord**_...()
+
+
 
 # Quellen und Empfehlungen
 
