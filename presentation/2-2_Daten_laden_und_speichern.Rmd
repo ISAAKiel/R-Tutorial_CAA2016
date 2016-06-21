@@ -20,9 +20,14 @@ df <- read.csv("../data/AtlantPottery.csv")
 
 Fehlermeldung:
 
-<code>Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
-  doppelte 'row.names' sind nicht zulässig</code>
-  
+```r
+Error in read.table(
+  file = file, 
+  header = header, 
+  sep = sep, 
+  quote = quote,  : 
+  doppelte 'row.names' sind nicht zulässig
+```
 
 ## Daten aus dem Dateisystem laden
 
@@ -37,12 +42,13 @@ df <- read.csv("../data/AtlantPottery.csv", sep = '\t')
 #)
 ```
 
-
 ## Daten aus dem Dateisystem laden
 
 ```{r} 
 head(df)
 ```
+
+
 
 # Andere Datenquellen
 

@@ -5,12 +5,12 @@ date: "6. Februar 2016"
 fontsize: 9pt 
 output: 
   beamer_presentation: 
+    fig_caption: no
     toc: true 
     theme: "metropolis" 
     pandoc_args: [ 
       "--highlight-style=tango" 
     ] 
-fig_caption: yes 
 ---
 
 # Daten verknüpfen (%in%, merge)
