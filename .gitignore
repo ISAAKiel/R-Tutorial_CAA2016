@@ -14,7 +14,7 @@ packrat/lib*/
 *.o
 *.so
 #presentation/*.pdf
-presentation/*.html
+#presentation/*.html
 # Packages #
 ############
 *.7z
