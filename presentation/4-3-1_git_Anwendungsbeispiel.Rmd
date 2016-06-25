@@ -1,0 +1,56 @@
+---
+title: "git - Modellentwicklung"
+author: "Clemens Schmid"
+date: "6. Februar 2016"
+fontsize: 9pt
+output:
+  beamer_presentation:
+    toc: true
+    theme: "metropolis"
+    pandoc_args: [
+      "--highlight-style=tango"
+    ]
+fig_caption: yes
+---
+
+# git
+
+```{R}
+library(quantaar)
+library(nnet)
+library(dplyr)
+
+graves <- bs1
+
+sex <- as.factor(rep(0, nrow(graves)))
+levels(sex) <- c("male", "female", "unknown")
+for (i in 1:nrow(graves)){
+  if (graves$sex_male[i] == 1){
+    sex[i] <- "male"
+  }
+  if(graves$sex_female[i] == 1){
+    sex[i] <- "female"
+  } 
+  if((graves$sex_male[i] == 1 && graves$sex_female[i] == 1) || (graves$sex_male[i] == 0 && graves$sex_female[i] == 0)){
+    sex[i] <- "unknown"
+  } 
+}
+
+graves <- data.frame(sex, graves[,-c(1,2,3,4,5,6)])
+
+graves <- filter(
+  graves,
+  sex != "unknown"  
+)
+
+graves.training <- sample_n(graves, 10)
+
+sex.nnet <- nnet(sex~., data = graves.training, size = 10, decay = 0)
+
+#summary(sex.nnet)
+
+table(
+  actual = graves$sex,
+  predict = predict(sex.nnet, newdata = graves, type = "class")
+)
+```
